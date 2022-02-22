@@ -1,0 +1,334 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+*/
+
+@import "./nosotros.scss";
+@import "./menu.scss";
+@import "./sucursales.scss";
+@import "./contacto.scss";
+
+body {
+    background-color: black;
+    width: 100%;
+}
+
+.btn_menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid rgb(226, 60, 38);
+}
+
+.header_menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header_menu li {
+    border-right: 1px solid rgb(243, 55, 22);
+}
+
+.header_menu li:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+.header_menu li a {
+    display: block;
+    padding: 0px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: white;
+}
+
+a:hover {
+    color: #e20202;
+}
+
+#header {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    color: white;
+}
+
+#header_video {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#header_titulo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/hornopizza.jpg);
+    background-repeat:no-repeat;
+    padding: 5% 0% 0% 0%;
+    background-position: bottom;
+}
+
+
+.header_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h_logo {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+}
+
+.header_menu {
+    position:fixed;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    border-right: 5px white solid;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* hasta aca el css del head */
+
+p {
+    color: white;
+}
+
+@keyframes efecto {
+    0% {
+        color: white;
+        font-size: auto;
+    }
+    100% {
+        color: black;
+        font-size: 18px;
+    }
+}
+
+
+.header_menu ul li {
+    border: 1px solid none;
+    padding: 5px;
+    margin: 0 10px;
+    list-style: none;
+    display: inline; 
+    text-decoration: none;   
+}
+
+.header_delivery {
+    padding: 15px;
+    margin-top: -5px;
+    margin-bottom: 0%;
+    font-family: 'Cormorant Infant', serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(to left, red,rgb(187, 187, 20));
+    display: flex;
+    justify-content: space-around;   
+}
+
+.header_frase {
+    font-size: 2rem;
+    padding-top: 5px;
+}
+
+.header_btn {
+    font-size: 1.3rem;
+    border: inset 2px rgba(10, 0, 0, 0.507);
+    box-shadow: inset 1px 1px 10px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.header_logos {
+    width: 50%;
+    height: auto;
+}
+
+#video_home .btnPedir {
+    font-size: 50px;
+    color: white;
+    background-color: none;
+    border: 5px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -250px;
+    nav-left: 100px;
+    width: 300px;
+    height: auto;
+    transition: width 3s;
+    text-align: center;
+}
+
+
+#video_home .btnPedir:hover {
+    width: 400px;
+    height: auto;
+    background-color: rgb(216, 77, 22);
+    text-align: center;
+}
+
+.seccion_home {
+    background-color: #d60505;
+    background-image:url(./img/fondopizza.jpg);
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 10% 10% 10% 10%;
+}
+
+
+.seccion_home_titulo {
+    background-color: #d60505;
+    font-size:xx-large;
+    width: 100%;
+    height: auto;
+}
+
+.seccion_home_p {
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 50%;
+    margin: 25px;
+}
+
+
+.footerh3 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    background-color: black;
+    padding: 10px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+footer .footerMapa {
+    border: black 4px solid;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to left, red,rgb(187, 187, 20));
+    }
+
+footer .footerMapa .facebook {
+    width: 50px;
+    height: auto;
+}
+
+.mapa {
+    width: 900px;
+    height: 250px;    
+}
+
+.instagram {
+    width: 50px; 
+    height: auto;
+}
+
+.footerRedes p {
+    color: black;
+}
+
+.iconMap {
+    width: 50px;
+    height: auto;
+    display: flex;
+}
+
+.iconEmail {
+    width: 50px;
+    height: auto;
+}
+
+.iconTel {
+    width: 50px;
+    height: auto; 
+}
+
+#consultas {
+    text-align: center;
+    display: inline;
+}
+
+h3 {
+    padding: 15px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: black;
+    color: white;
+    font-family: 'Cormorant Infant', serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+

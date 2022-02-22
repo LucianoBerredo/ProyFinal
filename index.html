@@ -4,77 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria_ElCosito</title>
-    <link rel="shortcut icon" href="./img/logo.png"> <!-- favicon agregado -->
+    <title>Pizzeria_ElCositoDeLaPizza</title>
+    <meta name="keywords" content="pizza, delivery, pizzeria, muzzarella, calabresa, napolitana">
+    <meta name="description" content="La pizzería más rica de la ciudad encontrala acá, te la llevamos o retirá en cualquier sucursal">
+    <link rel="shortcut icon" href="./img/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
 </head>
 
-
-
-<!-- Encabezado -->
-
-
 <body>
 
 <header id="header">
+
+    <input type="checkbox" id="btn_menu">
+        <label for="btn_menu"><img src="./img/logomenu.png" alt="logo menu"></label>
+        
  
-    <div class="header_titulo"> 
-        <h1>Pizzería El Cosito</h1>
+    <div>
+        <nav class="header_menu">
+            <ul>
+                <li> <a href="./index.html";>Home</a></li>
+                <li> <a href="./nosotros.html">Nosotros</a></li>
+                <li> <a href="./menu.html">Menu</a></li>
+                <li> <a href="./contacto.html">Contacto</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div id="header_video">
+            <video src="./video/pizza.mp4" width="100%" height="auto" autoplay muted></video>
+        
+        <div class="header_logo">
+            <img src="./img/logo.png" alt="logo pizzeria" class="h_logo">
+        </div>
+    </div>
+
+    <h1>Pizzería el cosito de la pizza</h1>
+
+    <div class="header_delivery">
+        <div>
+            <a href="https://www.rappi.com.ar/" target="blank">
+                <img src="./img/rappi.svg" alt="logo pedidos ya" class="header_logos">
+            </a>
+        </div>
+        <div>
+            <p class="header_frase">Pedidos a sucursal</p>
+            <button class="header_btn">Aquí</button>
+        </div>
+        <div>
+            <a href="https://www.pedidosya.com.ar/" target="blank">
+                <img src="./img/pedidosya.svg" alt="logo pedidos ya" class="header_logos">
+            </a>
+        </div>
+    </div>
+    
+    <div class="seccion_home">
+        <div>
+            <h3 class="seccion_home_titulo">La pizza más rica.</h3>
+        </div>
+        <div>
+            <p class="seccion_home_p">La pizza es uno de los platos más conocidos y demandados en el mundo hoy en día. Su aparición se remonta a miles de años atrás.</p>
+            <p class="seccion_home_p">Algunas personas dicen que su invención tuvo lugar en Grecia, otros en Egipto y otros que en el Norte de África. Así que quién inventó la pizza podría estar menos claro de lo que parece.</p>
+            <p class="seccion_home_p">Lo cierto es que existen diferentes versiones. La más certera es la que se refiere a esta invención hace más de 2.000 años en el sur de Italia.</p>
+            <p class="seccion_home_p">Entonces se consumía un tipo de pan plano recién horneado, una versión muy cercana de lo que es hoy este producto.</p>
+            <p class="seccion_home_p">Está claro que sin la certeza de quién inventó la pizza, los italianos son sin duda los grandes maestros y el pueblo que la popularizó por todo el mundo.</p>
+        </div>
     </div>
     
 
-    <div class="header_logo">
-        <img src="./img/logo.png" alt="logo pizzeria" width="150px" height="auto">
-    </div>
-
-        <!-- Menú - Listas desordenadas -->
-
-        <nav class="header_menu">
-
-            <ul>
-                <li> <a href="./index.html" target="_blank";>Home</a></li>  
-                <li> <a href="./nosotros.html" target="blank">Nosotros</a></li>
-                <li> <a href="./menu.html" target="blank">Menu</a></li>
-                <li> <a href="./contacto.html" target="blank">Contacto</a></li>
-                <li><a href="./sucursales.html"target="blank">Sucursales</a></li>
-            </ul>
-
-        </nav>
-
-
-        
-</header>
-
-<div class="tituloh2">
-    <h2>Probá los mejores sabores de nuestras pizas</h2>
-</div>
-
-<section>
-        <div id="video_home">
-            
-            <video src="./video/pizza.mp4" alt="video de pizza" width="100%" controls autoplay></video>
-            
-            <!-- Puse autoplay pero no arranca solo -->
-            
-            <a href="./menu.html" class="btnPedir">PEDIR</a>
-            
-        </div>
-        
-    </section>
     
 <!-- Footer -->
 
 <footer id="footer">
         
-    <div">
+    <div class="footerh3_caja">
         <h3 class="footerh3">Nuestra sucursal</h3>
     </div>
 
 <section> 
     <div class="footerMapa">
-        <div class="facebookCaja">
+        <div>
             <a href="https://www.facebook.com/"><img src="./icons/facebook.png" alt="facebook" class="facebook"></a>
         </div>
         
@@ -86,55 +97,12 @@
     </div>
 </section>
 
-
-<div class="footerRedes">
-    <img src="./icons/maps.png" alt="logo ubicación"  class="iconMap">
-    <p>Av. Rivadavia 2239</p>
-    <img src="./icons/email.png" alt="logo email"  class="iconEmail">
-    <p>contacto@pizzeriaelcosito.com</p>
-    <img src="./icons/telefono.png" alt="logo telefono" class="iconTel">
-    <p>4932-5563</p>
-</div>
-
     
 <div>
-    <h3>Consultas</h3>
+    <h3></h3>
     <form action="" method="get" enctype="text/plain" id="consultas">        
 </div>
     
-<div>    
-    <legend>
-        <div class="formulario">    
-            <label for="name">Nombre</label>
-            <input type="text" id="name">
-        </div>    
-            <div class="formulario">
-                <label for="email">Email</label>
-                <input type="email" id="email" >
-            </div>
-            <div class="formulario">
-                <label for="pass">Contraseña</label>
-                <input type="password" id="pass">
-            </div>
-            <div class="formulario">
-                <label for="comentario">Comentarios</label>
-                <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
-            </div>
-            
-            <div class="formulario">
-                <label for="Sexo">M</label>
-                <input type="radio" name="Sexo">
-                <label for="Sexo">F</label>
-                <input type="radio" name="Sexo">
-            </div>
-                
-            <div class="formulario">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </div>
-    </legend>
-</div>
-</form>
 
 </footer>
 

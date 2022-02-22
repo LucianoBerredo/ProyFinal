@@ -4,29 +4,44 @@
     box-sizing:border-box;
 }
 
+@media (max-width:768px) {
+    header label {
+        display: block;
+    }
 
-@media (max-width: 425px) {
+    .header_menu {
+        position: absolute;
+        background: black;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .header_menu ul {
+        flex-direction: column;
+    }
+
+    .header_menu li {
+        border-top: 1px solid red;
+    }
+
+    .btn_menu:checked - .header_menu {
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
 
     header {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px auto 100px;
-        padding-top: 10px; 
+        padding-top: 0px; 
     }
-    
-    header .header_titulo {
-        font-size: 16px;
-    }
-    
+
     header .header_menu {
         font-size: 18px;
         padding-top: 10px;        
-    }
-    
-    h2 {
-        font-size: large;
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     #video_home {
@@ -38,114 +53,134 @@
         align-self: center;
     }
 
-    section {
-        display: grid;
-    
+    .header_delivery {
+        display: flex;
+        flex-direction: column;
     }
     
-    section .btnPedir {
-        display:flex;
-        
+    .header_logos {
+        width: 80px;
+        height: auto;
+    }
+
+    .header_frase {
+        font-size: 1.5rem;
+    }
+
+    .header_btn {
+        width: 100px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .seccion_home {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion_home h3 {
+        width: 100%;
+        height: auto;
+        font-size: 1.0rem;
+    }
+
+    .seccion_home_titulo {
+        font-size: 1.3rem;
+        width: 300px;
+        height: auto;
+        margin-left: 10%;
+    }
+    .seccion_home_p {
+        width: 100%;
+        height: auto;
+        padding: 0% 0% 0% 0%;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    footer {
+        display: grid;
     }
     
     .footerh3 {
         font-size: large;
     }
-    
-    footer {
-        padding-top: 30px; 
-    }
 
     footer .footerMapa {
-        display: flex;
-        text-align: center;
+        flex-direction: column;
     }
 
     footer .footerMapa .facebook {
         width: 40px;
         height: auto;
+        margin: 10px;
     }
-
     
     footer .footerMapa .instagram {
         width: 40px;
         height: auto;
+        margin: 10px;
     }
     
     .mapa {
         width: 200px;
         height: auto;
     }
-    
-    footer .footerRedes {
+
+    /* Desde acá va la seccion nosotros */
+
+    .sectionNos1 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size:small;
     }
-    
-    .iconMap {
-        width: 40px;
+
+    .sectionFoto {
+        width: 50%;
         height: auto;
+        margin-left: 25%;
     }
-    
-    .iconEmail {
-        width: 40px;
-        height: auto;
-    }
-    
-    .iconTel {
-        width: 40px;
-        height: auto;
+
+    .txtNos {
+        font-size: 1rem;
+        margin-left: 20%;
     }
 
     /* Desde acá va la seccion menú */
 
-    .pizzas1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction:column;
+    .btn_pizza {
+        display: inline-block;
+    }
+    
+    .btn_pizza img {
+        width: 50%;
+        height: auto;
+        justify-content: center;
         text-align: center;
-        font-size:small;
+        align-items: center;
+        margin: 10%;
+        margin-bottom: 0%;
     }
 
-    .pizzas .pizzas1 .cuatroestaciones {
-        width: 150px;
-        height: auto;
-        display: flex;
+    .btn_pizza .pizzastxt {
+        font-size: 1.2rem;
     }
 
-    .pizzas .pizzas1 .chorizo {
-        width: 150px;
-        height: auto;
+    .container_grid {
         display: flex;
+        flex-direction: column;
     }
 
-    .pizzas .pizzas1 .iberica {
-        width: 150px;
+    .container_grid iframe {
+        width: 150%;
         height: auto;
-        display: flex;
-    }
-    .mitad {
-        width: 150px;
-        height: auto;
-        display: flex;
-    }
-    .salame {
-        width: 150px;
-        height: auto;
-        display: flex;
-    }
-    .york {
-        width: 150px;
-        height: auto;
-        display: flex;
     }
 
-}
+
+
+    /* desde aca va la seccion sucursales */
+
 
  
 

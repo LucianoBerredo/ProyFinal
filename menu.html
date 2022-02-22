@@ -4,50 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria_ElCosito</title>
+    <title>Pizzeria_ElCositoDeLaPizza</title>
+    <meta name="keywords" content="pizza, delivery, pizzeria, muzzarella, calabresa, napolitana">
+    <meta name="description" content="Elegí de nuestro menú la pizza que más te guste">
     <link rel="shortcut icon" href="./img/logo.png"> <!-- favicon agregado -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
 </head>
 
-
-
-<!-- Encabezado -->
-
-
 <body>
 
 <header id="header">
- 
-    <div class="header_titulo"> 
-        <h1>Pizzería El Cosito</h1>
-    </div>
-    
 
-    <div class="header_logo">
-        <img src="./img/logo.png" alt="logo pizzeria" width="150" height="auto">
-    </div>
-
-        <!-- Menú - Listas desordenadas -->
-    
+    <input type="checkbox" id="btn_menu">
+        <label for="btn_menu"><img src="./img/logomenu.png" alt="logo menu"></label>
+        
+    <div>
         <nav class="header_menu">
             <ul>
-                <li> <a href="./index.html" target="_blank";>Home</a></li>  
+                <li> <a href="./index.html" target="_blank";>Home</a></li>
                 <li> <a href="./nosotros.html" target="blank">Nosotros</a></li>
                 <li> <a href="./menu.html" target="blank">Menu</a></li>
                 <li> <a href="./contacto.html" target="blank">Contacto</a></li>
                 <li><a href="./sucursales.html"target="blank">Sucursales</a></li>
             </ul>
         </nav>
-
-
+    </div>
 </header>
+    
+<h1>Pizzería el cosito de la pizza</h1>
 
-<div class="tituloh2">
-    <h2>Nuestro Menú</h2>
+<div id="header_titulo">
+    <img src="./img/logo.png" alt="logo pizzeria" class="logo">
 </div>
 
+<div class="h2_titulo">
+    <h2>Nuestro Menú</h2>
+</div>
 
 <section>
     <div class="btn_pizza">
@@ -69,7 +63,9 @@
                     <option value="10">10</option>
                 </select>
             </form>
-        
+            <button class="btn_carrito">
+                Agregar
+            </button>
     </div>
     <div class="btn_pizza">
         <img src="./img/4estaciones.png" alt="pizza 4 estaciones">
@@ -77,7 +73,7 @@
 
         
         <form>
-            <select name="Cantidad" class="">
+            <select name="Cantidad" class="btn_cantidad">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -91,13 +87,16 @@
                 <option value="10">10</option>
             </select>
         </form>
+        <button class="btn_carrito">
+            Agregar
+        </button>
     </div>
     <div class="btn_pizza">
         <img src="./img/Iberica.png" alt="pizza Iberica">
         <div class="pizzastxt">Ibérica</div>
         
         <form>
-            <select name="Cantidad" class="">
+            <select name="Cantidad" class="btn_cantidad">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -111,13 +110,16 @@
                 <option value="10">10</option>
             </select>
         </form>
+        <button class="btn_carrito">
+            Agregar
+        </button>
     </div>
     <div class="btn_pizza">
         <img src="./img/salame.png" alt="pizza de salame">
         <div class="pizzastxt">Calabresa</div>
         
         <form>
-            <select name="Cantidad" class="">
+            <select name="Cantidad" class="btn_cantidad">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -131,13 +133,16 @@
                 <option value="10">10</option>
             </select>
         </form>
+        <button class="btn_carrito">
+            Agregar
+        </button>
     </div>
     <div class="btn_pizza">
         <img src="./img/york.png" alt="pizza york">
         <div class="pizzastxt">York</div>
         
         <form>
-            <select name="Cantidad" class="">
+            <select name="Cantidad" class="btn_cantidad">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -151,13 +156,16 @@
                 <option value="10">10</option>
             </select>
         </form>
+        <button class="btn_carrito">
+            Agregar
+        </button>
     </div>
     <div class="btn_pizza">
         <img src="./img/mitad.png" alt="pizza mitad y mitad">
         <div class="pizzastxt">Mitad</div>
         
         <form>
-            <select name="Cantidad" class="">
+            <select name="Cantidad" class="btn_cantidad">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -171,16 +179,19 @@
                 <option value="10">10</option>
             </select>
         </form>
+        <button class="btn_carrito">
+            Agregar
+        </button>
     </div>
 </section>
 
-    
 
+        
 <!-- Footer -->
-    
+
 <footer id="footer">
         
-    <div">
+    <div>
         <h3 class="footerh3">Nuestra sucursal</h3>
     </div>
 
@@ -198,58 +209,12 @@
     </div>
 </section>
 
-
-<div class="footerRedes">
-    <img src="./icons/maps.png" alt="logo ubicación"  class="iconMap">
-    <p>Av. Rivadavia 2239</p>
-    <img src="./icons/email.png" alt="logo email"  class="iconEmail">
-    <p>contacto@pizzeriaelcosito.com</p>
-    <img src="./icons/telefono.png" alt="logo telefono" class="iconTel">
-    <p>4932-5563</p>
-</div>
-
     
 <div>
-    <h3>Consultas</h3>
     <form action="" method="get" enctype="text/plain" id="consultas">        
 </div>
     
-<div>    
-    <legend>
-        <div class="formulario">    
-            <label for="name">Nombre</label>
-            <input type="text" id="name">
-        </div>    
-            <div class="formulario">
-                <label for="email">Email</label>
-                <input type="email" id="email" >
-            </div>
-            <div class="formulario">
-                <label for="pass">Contraseña</label>
-                <input type="password" id="pass">
-            </div>
-            <div class="formulario">
-                <label for="comentario">Comentarios</label>
-                <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
-            </div>
-            
-            <div class="formulario">
-                <label for="Sexo">M</label>
-                <input type="radio" name="Sexo">
-                <label for="Sexo">F</label>
-                <input type="radio" name="Sexo">
-            </div>
-                
-            <div class="formulario">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </div>
-    </legend>
-</div>
-</form>
 
 </footer>
-
 </body>
-
 </html>
